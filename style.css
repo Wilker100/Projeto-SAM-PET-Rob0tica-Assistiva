@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial;
+    margin-left:auto;
+    margin-right:auto;
+  }
+.slider {
+    width: 300px;
+}
