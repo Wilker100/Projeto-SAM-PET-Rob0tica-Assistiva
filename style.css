@@ -1,9 +1,61 @@
 body {
-    text-align: center;
-    font-family: "Trebuchet MS", Arial;
-    margin-left:auto;
-    margin-right:auto;
-  }
+  background: linear-gradient(to bottom, #af73e7 5%, #ae66e6 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: "Courier New", Arial;
+  margin-left:auto;
+  margin-right:auto; 
+}
+container {
+  display: grid;
+  grid-template-columns: 500px 1fr 2fr;
+  grid-template-rows: 500px 1fr 2fr;
+}
 .slider {
-    width: 300px;
+  -webkit-appearance: none;
+  background: #d3d3d3;
+  outline: none;
+  width: 300px;
+  height: 15px;
+  border-radius: 9px;  
+  box-shadow: 0px 2px #424141;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+
+  background: #2796ee;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+
+  background: #2796ee;
+  cursor: pointer;
+}
+
+.startbtn {
+  background: #0066A2;
+  padding: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #667be6;
+  border-radius: 64px;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  height: 72px;
+  width: 72px;
+  margin: 0.5em auto;
+  
+}
+.startbtn:hover{
+  box-shadow: 0px 0px 4px #000000;
 }

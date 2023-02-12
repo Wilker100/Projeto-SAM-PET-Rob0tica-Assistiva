@@ -4,47 +4,26 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <style>
-    body {
-      text-align: center;
-      font-family: "Courier New", Arial;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    .slider {
-      width: 300px;
-    }
-    .titleslider {
-        display: grid;
-        grid-template-columns: 500px 1fr 2fr;
-        grid-template-rows: 500px 1fr 2fr;
-    }
-
-    .startbutton {
-      background: #0066A2;
-      padding: 0;
-      border: none;
-      outline: none;
-      font: inherit;
-      color: inherit;
-      width: 64px;
-      margin: 0 auto;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="C:\Users\felipe\Desktop\appControle\style.css" media="screen" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class = "grid">
-  <img src = "C:\Users\IdvLab03\Documents\ProjetoSAM-Android\iconprojetosam.jpeg" style="max-width:312px; max-height:156px"> </img>
+  <div class = "container">
+  <img src = "https://i.imgur.com/mGoHbPL.png" style="max-width:312px; max-height:156px"> </img>
   <h1>Controle do servo</h1>
   <p>Amplitude em graus: <span id="servoPos"></span></p>
   <input type="range" min="0" max="180" class="slider" id="servoSlider" onchange="servo(this.value)"/>
-  <script src="C:\Users\IdvLab03\Documents\ProjetoSAM-Android\script.js"></script>
-  <p>Delay: <span id="servoPos"></span></p>
-  <input type="range" min="0" max="180" class="slider" id="servoSlider" onchange="servo(this.value)"/>
-  <script src="C:\Users\IdvLab03\Documents\ProjetoSAM-Android\script.js"></script>
-  <div class = "startbutton" text-align = center> <button><img src ="C:\Users\IdvLab03\Documents\ProjetoSAM-Android\iconrobotic.png" style="max-width:64px; max-height:64px;" title = "Iniciar"></button> </img></div>
-</div>
+  <script src="C:\Users\felipe\Desktop\appControle\script.js"></script>
+
+  <p>Delay do movimento: <span id="servoDelay"></span>ms</p>
+  <input type="range" min="0" max="180" class="slider" id="delaySlider"/>
+  <script src ="C:\Users\felipe\Desktop\appControle\script.js"></script>
+  
+  <div text-align=center>
+  <button class = "startbtn">Ativar</button> 
+
+  <strong><h1>LÚDICO</h1></strong>
+  </div>
   
 </body>
 
