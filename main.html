@@ -4,25 +4,34 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/feelps-1/Projeto-SAM-PET-Rob0tica-Assistiva/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="C:\Users\idvlab01\Downloads\Projeto-SAM-PET-Rob0tica-Assistiva-main (1)\Projeto-SAM-PET-Rob0tica-Assistiva-main/style.css" media="screen" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+  
+
   <div class = "container">
   <img src = "https://i.imgur.com/mGoHbPL.png" style="max-width:312px; max-height:156px"> </img>
   <h1>Controle do servo</h1>
   <p>Amplitude em graus: <span id="servoPos"></span></p>
   <input type="range" min="0" max="180" class="slider" id="servoSlider" onchange="servo(this.value)"/>
-  <script src="https://cdn.jsdelivr.net/gh/feelps-1/Projeto-SAM-PET-Rob0tica-Assistiva/script.js"></script>
+  <script src="C:\Users\idvlab01\Downloads\Projeto-SAM-PET-Rob0tica-Assistiva-main (1)\Projeto-SAM-PET-Rob0tica-Assistiva-main\script.js"></script>
 
   <p>Delay do movimento: <span id="servoDelay"></span>ms</p>
   <input type="range" min="0" max="180" class="slider" id="delaySlider"/>
-  <script src ="https://cdn.jsdelivr.net/gh/feelps-1/Projeto-SAM-PET-Rob0tica-Assistiva/script.js"></script>
-  
-  <div text-align=center>
-  <button class = "startbtn">Ativar</button> 
+  <script src ="C:\Users\idvlab01\Downloads\Projeto-SAM-PET-Rob0tica-Assistiva-main (1)\Projeto-SAM-PET-Rob0tica-Assistiva-main\script.js"></script>
+   
+  <p>Repetições</p>
+  <div class="counter">            
+        <button onclick="increment()">+</button>
+        <h2 id="counting">0</h2>
+        <button onclick="decrement()">-</button>        
+  </div>
+  <script src ="C:\Users\idvlab01\Downloads\Projeto-SAM-PET-Rob0tica-Assistiva-main (1)\Projeto-SAM-PET-Rob0tica-Assistiva-main\script.js"></script>
 
-  <strong><h1>LÚDICO</h1></strong>
+  <div text-align=center>
+    <button class = "startbtn">Começar</button>
+  
   </div>
   
 </body>
