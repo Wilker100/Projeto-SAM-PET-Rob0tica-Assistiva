@@ -41,19 +41,23 @@ container {
   cursor: pointer;
 }
 
-.startbtn {
+.button 
+{
+  padding: 20px 30px;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+  color: #000000;
   background: #567EBB;
-  padding: 0;
-  border: none;
-  border-radius: 64px;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  height: 72px;
-  width: 72px;
-  margin: 0.5em auto;
-  
+  border-radius: 60px;
+  box-shadow: 0 10px #999;
+  margin-top: 25px;
 }
-.startbtn:hover{
-  box-shadow: 0px 0px 4px #000000;
+
+.button:hover {background-color: #007095}
+
+.button:active {
+  background-color: #007095;
+  box-shadow: 0 5px rgb(25, 25, 25);
+  transform: translateY(5px);
 }
