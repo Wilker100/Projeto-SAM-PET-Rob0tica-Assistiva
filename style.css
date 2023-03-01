@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #af73e7 5%, #ae66e6 100%);
+  background-color:  #DCE0E6;
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
@@ -14,7 +14,7 @@ container {
 }
 .slider {
   -webkit-appearance: none;
-  background: #d3d3d3;
+  background: #606D80;
   outline: none;
   width: 300px;
   height: 15px;
@@ -28,7 +28,7 @@ container {
   height: 25px;
   border-radius: 50%; 
 
-  background: #2796ee;
+  background: #567EBB;
   cursor: pointer;
 }
 
@@ -37,16 +37,14 @@ container {
   height: 25px;
   border-radius: 50%; 
 
-  background: #2796ee;
+  background: #567EBB;
   cursor: pointer;
 }
 
 .startbtn {
-  background: #0066A2;
+  background: #567EBB;
   padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #667be6;
+  border: none;
   border-radius: 64px;
   outline: none;
   font: inherit;
