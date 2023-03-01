@@ -1,4 +1,5 @@
 var slider = document.getElementById("servoSlider");
+
     var servoP = document.getElementById("servoPos");
     servoP.innerHTML = slider.value;
     slider.oninput = function() {
@@ -26,13 +27,11 @@ var slider = document.getElementById("servoSlider");
     }
     //creation of decrement function
     function decrement() {
+      if (data > 0){
         data = data - 1;
         document.getElementById("counting").innerText = data;
     }
-    if(data < 0){
-      data = 0;
-      document.getElementById("counting").innerText = data;
-    }
+  }
 
     
     
@@ -41,5 +40,7 @@ var slider = document.getElementById("servoSlider");
       $.get("/?value=" + pos + "&");
       {Connection: close};
     }
+    
+    
     
     
